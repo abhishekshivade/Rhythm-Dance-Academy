@@ -1,0 +1,62 @@
+//- index.pug
+doctype html
+html 
+    head
+        title Rhythm Dance Academy | Live Enjoy Dance 
+        style 
+            include ../static/style.css
+    body 
+        nav#navbar.top 
+            ul
+                div#logo 
+                    img(src="/static/img/logo.png")
+                    | RDA 
+                li #[a(href="/") Home] 
+                li #[a(href="/") About]
+                li #[a(href="/") Services] 
+                li #[a(href="/") Class Info]
+                li #[a(href="../views/contact.pug") Contact Us]
+
+        section#introSection 
+            div Welcome to World's Best Dance Academy
+            div.small Live Enjoy Dance 
+        
+        section#missionSection  
+            h2   Our Mission 
+            div.card
+                h3 Dance Perfection
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/1.png") 
+                    div.card-content
+                        p This is Best Dance Academy
+                    
+            div.card
+                h3 Dance Your Way
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/2.png") 
+                    div.card-content
+                        p This is Best Dance Academy
+            
+            div.card
+                h3 Our Trainer
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/3.png") 
+                    div.card-content
+                        p This is Best Dance Academy
+        
+        section#sponserSection  
+            h2   Our Sponsors
+            div#sponsors
+                img(src="/static/img/logo1.png", alt="Sponsor Image", class="spImage")
+                img(src="/static/img/logo2.png", alt="Sponsor Image", class="spImage")
+                img(src="/static/img/logo3.png", alt="Sponsor Image", class="spImage")
+                img(src="/static/img/logo4.png", alt="Sponsor Image", class="spImage") 
+
+        footer#footer 
+            | Copyright &copy 2021 www.RhythmDanceAcademy.com | All Rights Reserved
+
+        script 
+            include ../static/index.js
